@@ -19,6 +19,14 @@ class Median {
             return b;
     }
 
+    static int med3_1(int a, int b, int c) {
+        if ((b >= a && c <= a) || (b <= a && c > a))
+            return a;
+        else if ((a > b && c < b) || (a < b && c > b))
+            return b;
+        return c;
+    }
+
     public static void main(String[] args) {
         Scanner stdIn = new Scanner(System.in);
 
